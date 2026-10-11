@@ -26,7 +26,7 @@ $$('.copy').forEach(b=>b.addEventListener('click',async()=>{try{await navigator.
 /* release info */
 const REL=window.RELEASE||{},set=(s,v)=>{if(v)$$(s).forEach(e=>e.textContent=v)};
 set('[data-version]',REL.version);set('[data-date]',REL.date);set('[data-size]',REL.size);set('[data-sha]',REL.sha256);
-if(REL.apkUrl)$$('[data-download]').forEach(a=>{a.href=REL.apkUrl;a.removeAttribute('aria-disabled');a.textContent='Download v'+(REL.version||'')+' for Android'});
+if(REL.apkUrl)$$('[data-download]').forEach(a=>{a.href=REL.apkUrl;a.removeAttribute('aria-disabled');a.textContent='Download '+(REL.version||'')+' for Android'});
 /* nav */
 const mb=$('.menu'),nv=$('#nav');
 if(mb&&nv){const cl=()=>{nv.classList.remove('open');mb.setAttribute('aria-expanded','false')};mb.addEventListener('click',()=>{const o=nv.classList.toggle('open');mb.setAttribute('aria-expanded',String(o))});nv.addEventListener('click',e=>{if(e.target.closest('a'))cl()});addEventListener('keydown',e=>{if(e.key==='Escape')cl()})}
