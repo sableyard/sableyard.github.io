@@ -1,2 +1,1 @@
-// Fill this in when a signed APK is published. Leave apkUrl empty until then.
-window.RELEASE={version:"",date:"",size:"",sha256:"",apkUrl:""};
+window.RELEASE={version:"v0.1.0",date:"October 10, 2026",size:"3.31 MB",sha256:"6F3756BD0821C96CD173433E12BB39B0AC8E7936EC887E959E376B77EE37E836",apkUrl:"https://github.com/sableyard/colloquy-releases/releases/download/v0.1.0/colloquy-0.1.0.apk"};
